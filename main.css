@@ -49,4 +49,104 @@ border-spacing: 0;
 
 body
 {
+	font-family: Tahoma, Arial, sans-serif;
+	font-size: 13px;
+	color: #3c3c3c;
+}
+h1, h2, h3, h1 a, h2 a
+{
+	margin-bottom: 8px;
+	text-decoration: none;
+}
+
+h1
+{
+	font-weight: normal;
+	font-size: 21px;
+	line-height: 23px;
+}
+
+h2
+{
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 21px;
+}
+
+h3
+{
+	font-size: 14px;
+	font-weight: bold;
+}
+
+input
+{
+	font: 13px/18px Tahoma,Arial,sans-serif;
+	color: #606060;
+}
+input.hint.hintShown,
+input.placeholder
+{
+	color: #979797 !important;
+	font-size: 13px !important;
+	font-style: italic !important;
+}
+input::-webkit-input-placeholder
+{
+	color: #979797 !important;
+	font-size: 13px !important;
+	font-style: italic !important;
+}
+input:-moz-placeholder
+{
+	color: #979797 !important;
+	font-size: 13px !important;
+	font-style: italic !important;
+}
+textarea
+{
+	font-family: Tahoma;
+	font-size: 13px;
+	color: #606060;	
+}
+select
+{
+	font: normal 13px/18px Tahoma, Arial, sans-serif;
+	width: 100%;
+	color: #606060;
+}
+select.customText
+{
+	color: #606060;
+}
+hr
+{
+	height: 1px;
+	border: 0;
+	background-color: #BBC5CA;
+	clear: both;
+}
+
+/* 1000 px layout 210 - 300 - 490 */
+.PageWrapper
+{
+	width: 1000px;
+	margin: 0 auto;
+}
+.TopBar /* Top bar - logo, login, menu */
+{
+	position: relative;
+}
+ 
+.TopBar .Logo
+{
+	width: 148px; height: 87px;
+	position: absolute;
+	bottom: 0; left: 0;
+}
+
+.TopBar .Logo a img
+{
+	border: 0;
+	height: 100%;
 }
