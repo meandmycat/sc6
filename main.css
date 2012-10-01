@@ -46,12 +46,32 @@ border-collapse: collapse;
 border-spacing: 0;
 }
 
+/* eo reset */
 
 body
 {
 	font-family: Tahoma, Arial, sans-serif;
 	font-size: 13px;
 	color: #3c3c3c;
+	background: #fff url(img/top_bg.jpg) left 87px repeat-x;
+}
+a
+{
+	text-decoration: underline;
+	color: #23699f;
+}
+a:hover
+{
+	text-decoration: none;
+}
+.LeftCol a
+{
+	text-decoration: none;
+	color: #616161;
+}
+.LeftCol a:hover
+{
+	text-decoration: underline;
 }
 h1, h2, h3, h1 a, h2 a
 {
@@ -68,9 +88,10 @@ h1
 
 h2
 {
-	font-size: 16px;
+	margin: 8px 0;
+	font-size: 18px;
 	font-weight: normal;
-	line-height: 21px;
+	line-height: 22px;
 }
 
 h3
@@ -133,9 +154,33 @@ hr
 	width: 1000px;
 	margin: 0 auto;
 }
+.MainContent
+{
+	margin: 43px 0 0 0;
+	background: url(img/faux_columns.gif) 209px top repeat-y;
+}
+.LeftCol
+{
+	float: left;
+	width: 209px;
+	padding: 0 1px 0 0;
+}
+.CenterCol
+{
+	float: left;
+	width: 299px;
+	padding: 0 1px 0 0;
+}
+.RightCol
+{
+	float: left;
+	width: 490px;
+}
+
 .TopBar /* Top bar - logo, login, menu */
 {
 	position: relative;
+	height: 87px;
 }
  
 .TopBar .Logo
@@ -150,3 +195,73 @@ hr
 	border: 0;
 	height: 100%;
 }
+
+/* List container */
+.ListContainer
+{
+	margin: 5px 0;
+}
+.ListContainer h2
+{
+	padding: 0 8px;
+}
+.ListContainer li
+{
+	height: 30px;
+	line-height: 30px;
+	padding: 0 8px;
+	margin-top: -5px;
+}
+.ListContainer li:hover,
+.DictionaryTermActive
+{
+	background: #305878;
+}
+.ListContainer li:hover a,
+.DictionaryTermActive a
+{
+	color: #fff;
+	text-decoration: none;
+}
+/* eo List container */
+
+/* DictionaryContentContainer */
+.DictionaryContentContainer dl
+{
+	padding: 20px;
+}
+.DictionaryContentContainer dl:hover,
+.DictionaryContentActive
+{
+	padding: 20px;
+	background: #305878;
+	color: #fff;
+}
+.DictionaryContentContainer a
+{
+	text-decoration: none;
+}
+.DictionaryContentContainer dl:hover a,
+.DictionaryContentActive a
+{
+	color: #fff;
+}
+.DictionaryContentContainer dt
+{
+	font-size: 16px;
+	line-height: 20px;
+}
+.DictionaryContentContainer dd
+{
+	display: inline-block;
+}
+/* eo DictionaryContentContainer */
+
+/* general purpose classes */
+.ClearerEl
+{
+	clear: both;
+	font-size: 0;
+	line-height: 0;
+}
+/* eo general purpose classes */
