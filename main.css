@@ -254,6 +254,13 @@ hr
 .DictionaryContentContainer dd
 {
 	display: inline-block;
+	color: #616161;
+	margin-right: 25px;
+}
+.DictionaryContentContainer dl:hover dd,
+.DictionaryContentActive dd
+{
+	color: #fff;
 }
 /* eo DictionaryContentContainer */
 
