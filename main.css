@@ -383,7 +383,8 @@ padding: 0;
 width: 131px;
 text-align: center;
 }
-.TopBar .TopMenu ul li:hover a /* Active menu point second background and link style */ 
+.TopBar .TopMenu ul li:hover a,
+.TopBar .TopMenu ul li.active a /* Active menu point second background and link style */ 
 {
 	color: #fff;
 	background: #8abd26;
