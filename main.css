@@ -52,7 +52,7 @@ body
 {
 	font-family: Tahoma, Arial, sans-serif;
 	font-size: 13px;
-	color: #3c3c3c;
+	color: #333;
 	background: #fff url(img/top_bg.jpg) left 87px repeat-x;
 }
 a
@@ -151,31 +151,50 @@ hr
 /* 1000 px layout 210 - 300 - 490 */
 .PageWrapper
 {
-	width: 1000px;
+	min-width: 800px;
+	max-width: 1200px;
 	margin: 0 auto;
+}
+.ContentWrapper
+{
+	margin: 43px 0 0 0;
+	padding: 30px 0 0 0;
 }
 .MainContent
 {
-	margin: 43px 0 0 0;
-	background: url(img/faux_columns.gif) 209px top repeat-y;
+	float: left;
+	width: 100%;
+}
+.MainContentInner
+{
+	margin: 0 0 0 210px;
+	overflow: hidden;
 }
 .LeftCol
 {
 	float: left;
 	width: 209px;
-	padding: 0 1px 0 0;
+	margin-left: -100%;
+	border-right: 1px solid #cfcfcf;
 }
 .CenterCol
 {
 	float: left;
-	width: 299px;
-	padding: 0 1px 0 0;
+	width: 40%;
+	min-width: 237px;
 }
-.RightCol
+.SideCol
 {
 	float: left;
-	width: 490px;
+	width: 60%;
+	min-width: 354px;
 }
+
+/* eo 1000px layout */
+
+/* 800 px min - 1200px max layout*/
+
+/* eo 800 px min - 1200px max layout */
 
 .TopBar /* Top bar - logo, login, menu */
 {
@@ -226,6 +245,10 @@ hr
 /* eo List container */
 
 /* DictionaryContentContainer */
+.DictionaryContentContainer h2
+{
+	padding: 0 0 0 20px;
+}
 .DictionaryContentContainer dl
 {
 	padding: 20px;
@@ -250,6 +273,7 @@ hr
 {
 	font-size: 16px;
 	line-height: 20px;
+	color: #24669a;
 }
 .DictionaryContentContainer dd
 {
@@ -263,6 +287,52 @@ hr
 	color: #fff;
 }
 /* eo DictionaryContentContainer */
+
+/* DictionaryEditContainer */
+.DictionaryEditContainer
+{
+	padding: 0 0 0 25px;
+}
+.DictionaryEditContainer h3
+{
+	margin: 20px 0 40px 10px;
+	font-size: 42px;
+	line-height: 48px;
+	font-weight: normal;
+}
+.DictionaryEditContainer table
+{
+	width: 100%;
+}
+.DictionaryEditContainer th
+{
+	text-align: left;
+	font-size: 18px;
+	padding: 5px 5px 20px 0;
+}
+.DictionaryEditContainer td
+{
+	padding: 5px 5px 5px 0;
+}
+.DictionaryEditContainer th:first-child,
+.DictionaryEditContainer td:first-child
+{
+	padding-left: 20px;
+}
+.DictionaryEditContainer .DictionaryItemName
+{
+	width: 210px;
+}
+.DictionaryEditContainer .DictionaryItemButtons
+{
+	text-align: right;
+}
+.DictionaryEditContainer .DictionaryItemButtons a
+{
+	margin: 0 20px;
+	color: #333;
+}
+/* eo DictionaryEditContainer */
 
 /* general purpose classes */
 .ClearerEl
