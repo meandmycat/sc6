@@ -6,6 +6,27 @@
     <link type="image/x-icon" href="http://www.ofir.dk/img/Customers/Denmark/Ofir/Ofir.dk/jobsearch/favicon.ico" rel="shortcut icon" />
     <link type="image/x-icon" href="http://www.ofir.dk/img/Customers/Denmark/Ofir/Ofir.dk/jobsearch/favicon.ico" rel="icon" />
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+    <script src="js/jquery-1.8.2.min.js" type="text/javascript"></script>
+    <script src="js/modernizr.js" type="text/javascript"></script>
+    <script>
+        $(document).ready(function () {
+            // this script will make old browsers friends with html5
+            Modernizr.load([
+            // Presentational polyfills
+             {
+             // Logical list of things we would normally need
+             test: Modernizr.borderradius || Modernizr.boxshadow || Modernizr.cssgradients,
+             // What to do if browser doesn't support the feature
+             nope: 'js/polyfills/PIE.js',
+             callback: function () {
+                 $('.TopMenu, .strip').each(function () {
+                     PIE.attach(this);
+                 });
+             }
+         }
+            ]);
+        });
+    </script>
 </head>
 <body>
 <div class="strip"></div>
